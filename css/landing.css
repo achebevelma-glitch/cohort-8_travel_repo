@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: #b8e4e1;
+    font-family: sans-serif;
+    
+    
+}
+.container{
+  
+  margin-top: 1em;
+  width: 80vw;
+  margin: 0 auto;
+  
+}
+.navbar{
+    display: flex;
+    gap: 50px;
+    
+}
+.navbar ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    padding-left: 300px;
+    margin-top: 20px;
+}
+.navbar a{
+    text-decoration: none;
+    color: #000;
+    
+    
+}
+.logo{
+    font-size: 18px;
+}
+.btn{
+    width: 100px;
+    margin-top: 20px;
+}
