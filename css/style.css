@@ -2,3 +2,61 @@
     margin: 0;
     padding: 0;
 }
+
+.site-footer  {
+    background-color: #b8dfe1;
+    color:#17245b;
+    padding: 40px 7% 20px;
+}
+ .footer-container  {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 60px;
+ }
+
+ .footer-brand h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom:12px;
+ }
+
+ .footer-brand p {
+    max-width: 190px;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #66708a;
+ }
+ .footer-column { 
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+ }
+
+ .footer-column h3 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #111827;
+ }
+
+    .footer-column a {
+        font-size: 11px;
+        color: #66708a;
+        text-decoration: none;
+    }
+    .footer-column a:hover {
+        color: #17245b;
+    }
+
+    .footer-bottom  {
+        text-align: center;
+        margin-top: 35px;
+    }
+
+    .footer-botom p {
+        font-size: 9px;
+        color: #66708a;
+    }
