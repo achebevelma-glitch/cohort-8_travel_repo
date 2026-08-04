@@ -1,54 +1,116 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    width: 100vw;
-    height: 100vh;
-    background: #b8e4e1;
-    font-family: sans-serif;
-    
-    
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #b8e4e1;
+  font-family: sans-serif;
 }
-.container{
-  
+
+.container {
   margin-top: 1em;
   width: 80vw;
   margin: 0 auto;
-  
 }
-.navbar{
-    display: flex;
-    gap: 50px;
-    
+
+.navbar {
+  display: flex;
+  gap: 50px;
 }
-.navbar ul{
-    display: flex;
-    gap: 50px;
-    list-style: none;
-    padding-left: 300px;
-    margin-top: 20px;
+
+.navbar ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  padding-left: 300px;
+  margin-top: 20px;
 }
-.navbar a{
-    text-decoration: none;
-    color: #000;
-    
-    
+
+.navbar a {
+  text-decoration: none;
+  color: #000;
 }
-.logo{
-    font-size: 18px;
+
+.logo {
+  font-size: 18px;
 }
-.btn{
-    width: 100px;
-    margin-top: 20px;
+
+.btn {
+  width: 100px;
+  margin-top: 20px;
+}
+
+/* Footer Styles */
+.site-footer {
+  background-color: #b8dfe1;
+  color: #17245b;
+  padding: 40px 7% 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 60px;
+}
+
+.footer-brand h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.footer-brand p {
+  max-width: 190px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #66708a;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-column h3 {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #111827;
+}
+
+.footer-column a {
+  font-size: 11px;
+  color: #66708a;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  color: #17245b;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.footer-botom p {
+  font-size: 9px;
+  color: #66708a;
 }
 .services {
   margin-bottom: 30px;
   margin-top: 60px;
   text-align: center;
 }
- 
+
 .section-tag {
   font-size: 0.78rem;
   font-weight: 700;
@@ -56,7 +118,7 @@ body{
   color: #2e5c59;
   margin-bottom: 10px;
 }
- 
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -66,7 +128,7 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
- 
+
 .service-card {
   background: white;
   border-radius: 20px;
@@ -74,7 +136,7 @@ body{
   text-align: center;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
 }
- 
+
 .service-icon {
   width: 56px;
   height: 56px;
@@ -82,13 +144,13 @@ body{
   display: block;
   object-fit: contain;
 }
- 
+
 .service-card h3 {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 12px;
 }
- 
+
 .service-card p {
   font-size: 14px;
   color: #555;
