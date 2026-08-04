@@ -59,9 +59,9 @@
     .footer-botom p {
         font-size: 9px;
         color: #66708a;
+        box-sizing: border-box;
     }
-    box-sizing: border-box;
-}
+
 body{
     width: 100vw;
     height: 100vh;
