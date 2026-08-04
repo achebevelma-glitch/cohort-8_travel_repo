@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 520" role="img" aria-labelledby="title desc">
+  <title id="title">Traveler with luggage</title>
+  <desc id="desc">A colorful flat illustration of a traveler sitting on a suitcase.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c9eef0"/><stop offset="1" stop-color="#9bd8dc"/></linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f17a52"/><stop offset="1" stop-color="#d84e43"/></linearGradient>
+  </defs>
+  <circle cx="240" cy="250" r="208" fill="url(#sky)"/>
+  <path d="M92 423c52-38 88-51 152-51 57 0 106 13 146 51" fill="none" stroke="#78bfc5" stroke-width="10" stroke-linecap="round"/>
+  <path d="M294 195c22 7 40 24 45 47l-22 57-54-13 2-66c4-17 13-26 29-25Z" fill="url(#shirt)"/>
+  <path d="m252 225 44 30-23 56-48-25Z" fill="#f6c349"/>
+  <path d="m252 270 46 28-20 51-58-17Z" fill="#2f72bc"/>
+  <path d="m264 336 45 0 29 61-25 14-48-49Z" fill="#243c67"/>
+  <path d="m227 333-2 49-32 46-25-13 22-74Z" fill="#243c67"/>
+  <path d="m309 393 27 7c9 2 15 10 12 18-3 7-11 10-19 8l-34-8Z" fill="#e4664b"/>
+  <path d="m193 411-19 17c-6 6-16 6-21 1-6-6-4-15 2-20l25-20Z" fill="#e4664b"/>
+  <circle cx="280" cy="170" r="39" fill="#e8a57e"/>
+  <path d="M242 165c2-35 24-53 53-43 16 5 27 18 29 35-17-6-32-14-44-27-8 19-21 30-38 35Z" fill="#5a3842"/>
+  <path d="M250 175c13 8 26 7 39-1" fill="none" stroke="#bc654f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M318 192c18 11 34 29 38 48l-11 5-29-31Z" fill="#e8a57e"/>
+  <path d="m318 193 42 30-9 13-42-25Z" fill="#f6c349"/>
+  <path d="M178 322h109v79H178z" rx="10" fill="#e94f4c"/>
+  <rect x="170" y="389" width="125" height="72" rx="12" fill="#f5b941"/>
+  <path d="M194 389v-22c0-14 10-24 24-24h29c14 0 24 10 24 24v22" fill="none" stroke="#2f72bc" stroke-width="9"/>
+  <circle cx="192" cy="462" r="12" fill="#243c67"/><circle cx="275" cy="462" r="12" fill="#243c67"/>
+  <path d="M113 142 93 111m266 12 27-21" stroke="#f5b941" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="91" cy="108" r="10" fill="#ef6c4d"/><circle cx="389" cy="99" r="10" fill="#ef6c4d"/>
+</svg>
