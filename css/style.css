@@ -55,20 +55,28 @@ root {
   --wrap: 1200px;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
   background: var(--bg);
   color: var(--navy);
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-h1, .logo, .btn, .play-demo, .avatar {
-  font-family: 'Poppins', 'Inter', sans-serif;
+h1,
+.logo,
+.btn,
+.play-demo,
+.avatar {
+  font-family: "Poppins", "Inter", sans-serif;
 }
 
 .wrap {
@@ -77,7 +85,10 @@ h1, .logo, .btn, .play-demo, .avatar {
   padding: 0 32px;
 }
 
-a { color: inherit; text-decoration: none; }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
 /* ---------- Header ---------- */
 
@@ -108,7 +119,7 @@ a { color: inherit; text-decoration: none; }
 
 .main-nav a {
   opacity: 0.85;
-  transition: opacity .15s ease;
+  transition: opacity 0.15s ease;
 }
 
 .main-nav a:hover,
@@ -137,7 +148,9 @@ a { color: inherit; text-decoration: none; }
   color: var(--navy);
 }
 
-.btn-outline:hover { background: rgba(23, 35, 61, 0.06); }
+.btn-outline:hover {
+  background: rgba(23, 35, 61, 0.06);
+}
 
 .btn-primary {
   background: var(--gold);
@@ -145,7 +158,9 @@ a { color: inherit; text-decoration: none; }
   box-shadow: 0 10px 20px -8px rgba(245, 166, 35, 0.65);
 }
 
-.btn-primary:hover { background: #e39510; }
+.btn-primary:hover {
+  background: #e39510;
+}
 
 .avatar {
   width: 44px;
@@ -276,9 +291,9 @@ a { color: inherit; text-decoration: none; }
   box-shadow: 0 8px 18px -6px rgba(239, 108, 77, 0.7);
 }
 
-.play-demo:hover .play-icon { background: #e2593b; }
-
-
+.play-demo:hover .play-icon {
+  background: #e2593b;
+}
 
 .hero-media {
   position: relative;
@@ -301,10 +316,10 @@ a { color: inherit; text-decoration: none; }
 }
 
 @media (min-width: 1160px) {
-  .avatar-floating { right: -22px; }
+  .avatar-floating {
+    right: -22px;
+  }
 }
-
-
 
 .modal {
   position: fixed;
@@ -316,14 +331,16 @@ a { color: inherit; text-decoration: none; }
   z-index: 50;
 }
 
-.modal[hidden] { display: none; }
+.modal[hidden] {
+  display: none;
+}
 
 .modal-card {
   position: relative;
   background: var(--white);
   border-radius: 16px;
   padding: 48px 56px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--navy);
 }
 
@@ -338,8 +355,6 @@ a { color: inherit; text-decoration: none; }
   color: var(--navy-soft);
 }
 
-
-
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
@@ -347,8 +362,13 @@ a { color: inherit; text-decoration: none; }
     text-align: left;
   }
 
-  .hero-media { order: -1; margin-bottom: 8px; }
-  .hero-copy h1 { font-size: 40px; }
+  .hero-media {
+    order: -1;
+    margin-bottom: 8px;
+  }
+  .hero-copy h1 {
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 760px) {
@@ -364,19 +384,37 @@ a { color: inherit; text-decoration: none; }
     display: none;
   }
 
-  .main-nav.open { display: flex; }
-  .main-nav a { padding: 10px 0; border-bottom: 1px solid rgba(23,35,61,0.08); }
+  .main-nav.open {
+    display: flex;
+  }
+  .main-nav a {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(23, 35, 61, 0.08);
+  }
 
-  .site-header { position: relative; }
-  .nav-toggle { display: flex; }
-  .header-actions .btn-outline { display: none; }
+  .site-header {
+    position: relative;
+  }
+  .nav-toggle {
+    display: flex;
+  }
+  .header-actions .btn-outline {
+    display: none;
+  }
 
-  .hero-copy h1 { font-size: 34px; }
+  .hero-copy h1 {
+    font-size: 34px;
+  }
 }
 
 @media (max-width: 480px) {
-  .wrap { padding: 0 20px; }
-  .hero { padding-left: 20px; padding-right: 20px; }
+  .wrap {
+    padding: 0 20px;
+  }
+  .hero {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 /* Footer Styles */
@@ -461,7 +499,7 @@ body {
   height: auto;
   background: var(--bg);
   color: var(--navy);
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
 }
 
 .container {
@@ -480,7 +518,7 @@ body {
 
 .logo {
   color: var(--navy);
-  font-family: 'Poppins', 'Inter', sans-serif;
+  font-family: "Poppins", "Inter", sans-serif;
   font-size: 24px;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -518,7 +556,7 @@ body {
   padding: 12px 26px;
   border: none;
   border-radius: var(--radius-pill);
-  font-family: 'Poppins', 'Inter', sans-serif;
+  font-family: "Poppins", "Inter", sans-serif;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
@@ -541,7 +579,7 @@ body {
 
 .hero-copy h1,
 .hero-copy .hero-actions {
-  font-family: 'Poppins', 'Inter', sans-serif;
+  font-family: "Poppins", "Inter", sans-serif;
 }
 
 .hero-copy h1 {
@@ -549,7 +587,7 @@ body {
 }
 
 .hero-text {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
 }
 
 .hero-media img {
