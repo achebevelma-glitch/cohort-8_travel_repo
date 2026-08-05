@@ -105,14 +105,8 @@ body {
   font-size: 9px;
   color: #66708a;
 }
-<<<<<<< HEAD
-.btn{
-    width: 100px;
-    margin-top: 20px;
-}
-
 /*Subcription Page*/
-.subcribe-section{
+.subscribe-section{
     display: flex;
     justify-content: center;
     margin-top: 100px;
@@ -172,5 +166,3 @@ body {
 .subscribe-btn:hover{
     background: #9fd6d2;
 }
-=======
->>>>>>> origin/main
