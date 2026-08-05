@@ -105,3 +105,64 @@ body {
   font-size: 9px;
   color: #66708a;
 }
+/*Subcription Page*/
+.subscribe-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.subscribe-card{
+    background: #fff;
+    border-radius: 20px;
+    padding: 50px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.subscribe-heading{
+    font-size: 20px;
+    font-weight: 600;
+    color: #4a4a4a;
+    line-height: 1.6;
+    max-width: 460px;
+    margin-bottom: 24px;
+}
+.subscribe-form{
+    display: flex;
+    gap: 15px;
+}
+.input-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 2;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px 16px;
+}
+.mail-icon{
+    color: #7a7a7a;
+    flex-shrink: 0;
+}
+.email-input{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+    font-family: inherit;
+}
+.subscribe-btn{
+    width: auto;
+    padding: 12px 30px;
+    margin-top: 0;
+    background: #b8e4e1;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 15px;
+}
+.subscribe-btn:hover{
+    background: #9fd6d2;
+}
