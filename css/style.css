@@ -4,10 +4,23 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg: #cfe9e7;
+  --navy: #17233d;
+  --navy-soft: #55647d;
+  --coral: #ef6c4d;
+  --gold: #f5a623;
+  --line: #2f7de1;
+  --white: #ffffff;
+  --radius-pill: 999px;
+  --wrap: 1200px;
+}
+
 body {
-  width: 100vw;
-  height: 100vh;
-  background: #b8e4e1;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  background: var(--bg);
   font-family: sans-serif;
 }
 
@@ -42,6 +55,237 @@ body {
 .btn {
   width: 100px;
   margin-top: 20px;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  padding: 72px 32px 96px;
+  position: relative;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.eyebrow {
+  color: var(--coral);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 18px;
+}
+
+.hero-copy h1 {
+  font-size: 52px;
+  line-height: 1.12;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: var(--navy);
+  font-family: "Poppins", "Inter", sans-serif;
+}
+
+.hero-divider {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 28px 0;
+  color: var(--line);
+}
+
+.hero-divider .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--line);
+  flex-shrink: 0;
+}
+
+.hero-divider .line {
+  flex: 1;
+  max-width: 120px;
+  height: 0;
+  border-top: 2px dashed var(--line);
+}
+
+.hero-divider .cross {
+  font-size: 13px;
+  line-height: 1;
+}
+
+.hero-text {
+  max-width: 380px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--navy-soft);
+  margin: 0 0 36px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.play-demo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--navy);
+  font-family: "Poppins", "Inter", sans-serif;
+}
+
+.play-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--coral);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 18px -6px rgba(239, 108, 77, 0.7);
+}
+.hero .btn {
+  width: auto;
+  margin-top: 0;
+  border: none;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  font-family: "Poppins", "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 26px;
+}
+
+.hero .btn-primary {
+  background: var(--gold);
+  box-shadow: 0 10px 20px -8px rgba(245, 166, 35, 0.65);
+  color: var(--white);
+}
+
+.hero .btn-primary:hover {
+  background: #e39510;
+}
+
+.play-demo:hover .play-icon {
+  background: #e2593b;
+}
+
+.hero-media {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-media img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  display: block;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(23, 35, 61, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.modal[hidden] {
+  display: none;
+}
+
+.modal-card {
+  position: relative;
+  background: var(--white);
+  border-radius: 16px;
+  padding: 48px 56px;
+  font-family: "Inter", sans-serif;
+  color: var(--navy);
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: var(--navy-soft);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 48px;
+    text-align: left;
+  }
+
+  .hero-media {
+    order: -1;
+    margin-bottom: 8px;
+  }
+  .hero-copy h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 760px) {
+  .main-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    flex-direction: column;
+    gap: 0;
+    padding: 8px 32px 20px;
+    display: none;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+  .main-nav a {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(23, 35, 61, 0.08);
+  }
+
+  .site-header {
+    position: relative;
+  }
+  .nav-toggle {
+    display: flex;
+  }
+  .header-actions .btn-outline {
+    display: none;
+  }
+
+  .hero-copy h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrap {
+    padding: 0 20px;
+  }
+  .hero {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 /* Footer Styles */
