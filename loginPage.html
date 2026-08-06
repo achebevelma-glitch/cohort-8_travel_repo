@@ -1,15 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login page</title>
-    <link rel="stylesheet" href="">
-</head>
-<body>
-    <div class="loginPage-container">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Create Account</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/loginStyles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="brand-panel">
+        <h1>travel.</h1>
+        <p>Book your trip in minute, get full Control for much longer.</p>
+      </div>
 
+      <div class="card">
+        <h1>Create Account</h1>
+
+        <div class="social-row">
+          <button class="social-btn">
+            <img
+              src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/google/default.svg"
+              alt="Google"
+              width="20"
+              height="20"
+            />
+            Sign up with Google
+          </button>
+          <button class="social-btn">
+            <img
+              src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/facebook/default.svg"
+              alt="Facebook"
+              width="20"
+              height="20"
+            />
+            Sign up with Facebook
+          </button>
+        </div>
+
+        <div class="divider"><span>OR</span></div>
+
+        <div class="field">
+          <input type="text" placeholder="Full Name" />
+        </div>
+        <div class="field">
+          <input type="email" placeholder="Email Address" />
+        </div>
+        <div class="field password-field">
+          <input type="password" placeholder="Password" />
+          <i class="fa-regular fa-eye"></i>
+        </div>
+
+        <button class="create-btn">Create Account</button>
+
+        <p class="login-line">Already have an account? <a href="#">Log in</a></p>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
