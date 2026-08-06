@@ -1,20 +1,36 @@
 const destinations = [
     {
-        image:"/images/Image1.png",
+        image:"images/image1.png",
         location:"London, Uk",
         price:"$4.2k",
         trip:"12"
     },
         {
-        image:"/images/Image2.png",
+        image:"images/image2.jpg",
         location:"London, Uk",
         price:"$4.2k",
         trip:"12"
     },
         {
-        image:"/images/Image3.png",
+        image:"images/image3.png",
         location:"Full Europe",
         price:"$4.2k",
         trip:"28"
     },
 ]
+const container = document.getElementById("destinations");
+
+container.innerHTML = destinations
+    .map(
+        (dest) => `
+        <div class="card">
+            <img src="${dest.image}" alt="${dest.location}" class="card-image">
+            <div class="card-body">
+                <h3 class="card-location">${dest.location}</h3>
+                <p class="card-price">${dest.price} <span>/ person</span></p>
+                <p class="card-trip">${dest.trip} Trips available</p>
+            </div>
+        </div>
+    `
+    )
+    .join("");
