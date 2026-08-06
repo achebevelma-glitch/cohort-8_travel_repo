@@ -24,7 +24,9 @@ container.innerHTML = destinations
     .map(
         (dest) => `
         <div class="card">
-            <img src="${dest.image}" alt="${dest.location}" class="card-image">
+        <div >
+        <img src="${dest.image}" alt="${dest.location}" class="card-image">
+        </div>
             <div class="card-body">
                 <h3 class="card-location">${dest.location}</h3>
                 <h3 class="card-price">${dest.price}</3>

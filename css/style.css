@@ -478,10 +478,10 @@ body {
   background: #9fd6d2;
 }
 
-/* desintation styling */
+/* destination styling */
 .destinations {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 10fr));
   gap: 20px;
   padding: 40px;
 }
@@ -536,3 +536,29 @@ body {
   width: 100%;
   padding: 16px;
 }
+
+.destination {
+  text-align: center;
+}
+
+.destination h3 {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #2e5c59;
+  margin-bottom: 10px;
+}
+
+.image-container {
+  width: 100%;
+  background: red;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* .destination h3 {} */
