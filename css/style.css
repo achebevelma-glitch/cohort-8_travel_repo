@@ -64,7 +64,7 @@ body {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 40px;
-  padding: 72px 32px 96px;
+  padding: 72px 0 96px;
   position: relative;
   font-family: "Inter", system-ui, sans-serif;
 }
@@ -279,12 +279,9 @@ body {
 }
 
 @media (max-width: 480px) {
-  .wrap {
-    padding: 0 20px;
-  }
   .hero {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
