@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: #b8e4e1;
+}
+
+/* LEFT teal panel */
+.brand-panel {
+  width: 35%;
+  background: #b8e4e1;
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  /* padding-top: 100px; */
+}
+
+.brand-panel h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 80px;
+  color: #2d2d2d;
+  justify-content: flex-start;
+
+
+}
+
+.brand-panel p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+  max-width: 260px;
+}
+
+/* RIGHT white panel */
+.card {
+  width: 65%;
+  background: white;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 60px 0 0 60px;
+}
+
+.card h1 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #2d2d2d;
+}
+
+.social-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.social-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.divider {
+  text-align: center;
+  color: #999;
+  font-size: 0.85rem;
+  margin-bottom: 30px;
+}
+
+.field {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.field input {
+  width: 100%;
+  padding: 10px 5px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  outline: none;
+  font-size: 1rem;
+}
+
+.password-field i {
+  position: absolute;
+  right: 5px;
+  top: 12px;
+  color: #999;
+  cursor: pointer;
+}
+
+.create-btn {
+  background: #7dd3cf;
+  color: #fff;
+  border: none;
+  padding: 16px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.login-line {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.login-line a {
+  color: #4fb8c8;
+  text-decoration: none;
+  font-weight: 600;
+}
