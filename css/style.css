@@ -242,6 +242,11 @@ body {
   .hero-copy h1 {
     font-size: 40px;
   }
+
+  .destinations {
+    grid-template-columns: 1fr;
+    max-width: 90vw;
+  }
 }
 
 @media (max-width: 760px) {
@@ -478,19 +483,43 @@ body {
   background: #9fd6d2;
 }
 
-/* destination styling */
+/* ---------- Destination heading ---------- */
+.destination {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.destination h3 {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #2e5c59;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.destination h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--navy);
+  font-family: "Poppins", "Inter", sans-serif;
+}
+
+/* ---------- Destination cards ---------- */
 .destinations {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 10fr));
-  gap: 20px;
-  padding: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: var(--wrap);
+  margin: 40px auto 100px;
+  padding: 0 32px;
 }
 
 .card {
-  border-radius: 12px;
+  border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   background: #fff;
+  box-shadow: 0 20px 40px -18px rgba(23, 35, 61, 0.25);
   transition: transform 0.2s ease;
 }
 
@@ -500,65 +529,45 @@ body {
 
 .card-image {
   width: 100%;
-  height: 180px;
+  height: 320px;
   object-fit: cover;
   display: block;
 }
 
 .card-body {
-  padding: 16px;
+  padding: 22px 20px 6px;
   display: flex;
   justify-content: space-between;
-  /* background-color: yellow; */
-
+  align-items: flex-start;
 }
 
 .card-location {
-  margin: 0 0 8px;
-  font-size: 1.1rem;
-  color: #222;
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--navy);
+  font-family: "Poppins", "Inter", sans-serif;
 }
 
 .card-price {
-  font-weight: bold;
-  color: #555;
-  margin: 0 0 4px;
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--navy-soft);
 }
-
-
 
 .card-trip {
-  font-size: 0.9rem;
-  color: #555;
-  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: auto;
+  padding: 0 20px 22px;
+  font-size: 0.85rem;
+  color: var(--navy-soft);
   text-align: left;
-  /* background: red; */
-  width: 100%;
-  padding: 16px;
 }
 
-.destination {
-  text-align: center;
+.card-trip .pin-icon {
+  flex-shrink: 0;
+  color: var(--navy);
 }
-
-.destination h3 {
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  color: #2e5c59;
-  margin-bottom: 10px;
-}
-
-.image-container {
-  width: 100%;
-  background: red;
-}
-
-.image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-/* .destination h3 {} */
