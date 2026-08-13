@@ -19,8 +19,89 @@
         <div class="logo">
           <h2>Travel</h2>
         </div>
-
         <ul>
+
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#destinations">Destination</a></li>
+                    <li><a href="#bookings">Booking</a></li>
+                    <li><a href="#contacts">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            <button class="btn">Sign up</button>
+        </nav>
+    </div>
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">Best destinations around the world</p>
+        <h1>Travel, enjoy<br />and live a new<br />and full life</h1>
+        <div class="hero-divider" aria-hidden="true">
+          <span class="dot"></span><span class="line"></span
+          ><span class="cross">✦</span><span class="line"></span>
+        </div>
+        <p class="hero-text">
+          Built Wicket longer admire do barton vanity itself do in it. Preferred
+          to sportsmen it engrossed listening. Park gate sell they west hard for
+          the.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" id="findOutMore" type="button">
+            Find out more
+          </button>
+          <button class="play-demo" id="playDemo" type="button">
+            <span class="play-icon" aria-hidden="true"
+              ><svg
+                width="12"
+                height="14"
+                viewBox="0 0 12 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 6.13a1 1 0 0 1 0 1.74L1.75 13.2A1 1 0 0 1 .25 12.33V1.67a1 1 0 0 1 1.5-.87L11 6.13Z"
+                  fill="white"
+                /></svg></span
+            >Play Demo
+          </button>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="assets/headerImage.png" alt="Lady carrying a travel bag" />
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <p class="section-tag">CATEGORY</p>
+      <h2>We Offer Best Services</h2>
+      <div class="services-grid" id="servicesGrid"></div>
+    </section>
+    
+    <!-- destination section -->
+     <div class="destination">
+
+       <h3  >TOP SELLING</h3>
+       <h2 >Top destination</h2>
+     </div>
+      <section id="destinations" class="destinations"></section>
+
+    <!-- subscription page -->
+    <section class="subscribe-section">
+      <div class="subscribe-card">
+        <h2 class="subscribe-heading">
+          subcribe to get information,latest news and other
+          interesting offers about Travel
+        </h2>
+        <form class="subscribe-form">
+          <div class="input-wrapper">
+            <svg class="mail-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="m2 6 10 7 10-7"></path>
+            </svg>
+            <input type="email" class="email-input" placeholder="Enter your email" required>
+          </div>
+          <button type="submit" class="btn subscribe-btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
           <li><a href="#services">Service</a></li>
           <li><a href="#destinations">Destination</a></li>
           <li><a href="#bookings">Booking</a></li>
@@ -106,5 +187,9 @@
         <p>All rights reserved@travel.co.ke</p>
       </div>
     </footer>
+
+    <script src="js/cardRenderer.js"></script>
+    <script src="js/services.js"></script>
+     <script src="js/destination.js"></script>
   </body>
 </html>
