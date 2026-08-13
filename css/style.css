@@ -181,7 +181,7 @@ body {
 
 .hero-media {
   position: relative;
-  display: flex;
+  display: space-between;
   justify-content: center;
 }
 
