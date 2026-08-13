@@ -182,7 +182,7 @@ body {
 
 .hero-media {
   position: relative;
-  display: space-between;
+  display: flex;
   justify-content: center;
 }
 
@@ -289,7 +289,6 @@ body {
 }
 
 @media (max-width: 480px) {
-
   .hero {
     padding-left: 0;
     padding-right: 0;
