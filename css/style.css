@@ -182,7 +182,11 @@ body {
 
 .hero-media {
   position: relative;
+<<<<<<< Updated upstream
   display: flex;
+=======
+  display: space-around;
+>>>>>>> Stashed changes
   justify-content: center;
 }
 
