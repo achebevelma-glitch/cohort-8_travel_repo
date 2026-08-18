@@ -77,6 +77,9 @@ body {
   text-transform: uppercase;
   margin: 0 0 18px;
 }
+.hero-copy {
+  transform: translateX(40px);
+}
 
 .hero-copy h1 {
   font-size: 52px;
@@ -182,11 +185,7 @@ body {
 
 .hero-media {
   position: relative;
-<<<<<<< Updated upstream
-  display: flex;
-=======
   display: space-around;
->>>>>>> Stashed changes
   justify-content: center;
 }
 
