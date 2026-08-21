@@ -16,6 +16,14 @@
   --wrap: 1200px;
 }
 
+/* Centering utility used by sections that opt into the page wrap */
+.wrap {
+  max-width: var(--wrap);
+  width: 90vw;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 body {
   width: 100%;
   min-height: 100vh;
@@ -187,8 +195,9 @@ body {
 
 .hero-media {
   position: relative;
-  display: space-between;
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .hero-media img {
