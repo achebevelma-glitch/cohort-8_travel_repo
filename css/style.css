@@ -33,9 +33,13 @@ body {
 }
 
 .container {
+  /* Use the same centering as the `.wrap` utility so sections align
+     (logo, hero and other wrapped sections share the same left edge) */
   margin-top: 1em;
-  width: 80vw;
+  max-width: var(--wrap);
+  width: 90vw;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .navbar {
@@ -47,9 +51,10 @@ body {
 
 .navbar ul {
   display: flex;
-  gap: 50px;
+  gap: 30px;
   list-style: none;
-  padding-left: 300px;
+  margin-left: auto; /* push nav items to the right while keeping logo at the wrap's left */
+  padding-left: 0;
   margin-top: 20px;
 }
 
@@ -391,9 +396,11 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   margin-top: 30px;
-  max-width: 80vw;
+  /* Align services grid with the page wrap so it lines up with the logo/hero */
+  max-width: var(--wrap);
   margin-left: auto;
   margin-right: auto;
+  padding: 0 20px;
 }
 
 .service-card {
@@ -429,6 +436,8 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 100px;
+  /* space between subscribe and footer */
+  margin-bottom: 80px;
 }
 
 .subscribe-card {
@@ -523,7 +532,8 @@ body {
   gap: 32px;
   max-width: var(--wrap);
   margin: 40px auto 100px;
-  padding: 0 32px;
+  /* keep horizontal padding consistent with other wrapped sections */
+  padding: 0 20px;
 }
 
 .card {

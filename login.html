@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Login — Travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/loginStyles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="brand-panel">
+        <h1>travel.</h1>
+        <p>Book your trip in minute, get full Control for much longer.</p>
+      </div>
+
+      <div class="card">
+        <h1>Log in</h1>
+
+        <form id="loginForm" novalidate>
+          <div class="field">
+            <input id="loginEmail" type="email" placeholder="Email Address" autocomplete="email" />
+          </div>
+
+          <div class="field password-field">
+            <input id="loginPassword" type="password" placeholder="Password" autocomplete="current-password" />
+            <i id="loginTogglePassword" class="fa-regular fa-eye" role="button" tabindex="0" aria-label="Show password"></i>
+          </div>
+
+          <button id="loginBtn" class="create-btn" type="submit">Log in</button>
+          <p id="loginStatus" aria-live="polite"></p>
+        </form>
+
+        <p class="login-line">Don't have an account? <a href="loginPage.html">Create account</a></p>
+      </div>
+    </div>
+
+    <script src="js/signin.js"></script>
+  </body>
+</html>
