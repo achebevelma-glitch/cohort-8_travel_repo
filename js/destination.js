@@ -1,12 +1,12 @@
 const destinations = [
     {
-        image: "images/image1.png",
+        image: "images/imageV3.jpeg",
         location: "London, Uk",
         price: "$ 4.2k",
         trip: "12"
     },
     {
-        image: "images/image2.jpg",
+        image: "images/imagev2.png",
         location: "London, Uk",
         price: "$ 4.2k",
         trip: "12"
